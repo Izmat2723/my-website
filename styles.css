@@ -6,11 +6,11 @@ body {
 }
 
 header {
-    background: rgb(1, 50, 66); 
+    background: rgb(1, 50, 66); /* Updated to navy blue */
     color: #fff;
-    padding: 20px 20px;
+    padding: 20px;
     text-align: center;
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.2em; /* Slightly increased font size */
 }
 
 nav ul {
@@ -32,10 +32,6 @@ main {
     padding: 20px;
 }
 
-#filters {
-    margin: 20px 0;
-}
-
 #rss-section {
     margin-top: 20px;
 }
@@ -45,45 +41,17 @@ main {
     padding: 10px 0;
 }
 
-/* Category-specific styles */
-.category-1 {
-    background-color: #f0f8ff; 
-}
-
-.category-2 {
-    background-color: #f5f5dc; 
-}
-
-.category-3 {
-    background-color: #e6e6fa; 
-}
-
-.category-4 {
-    background-color: #ffe4e1; 
-}
-
 #rss-feed h3 {
     margin: 0;
 }
 
 #rss-feed a {
     text-decoration: none;
-    color: rgb(1, 50, 66);
+    color: #007bff;
 }
 
 #rss-feed a:hover {
     text-decoration: underline;
-}
-
-.post-category {
-    font-size: 0.8em;
-    color: #888;
-    display: block;
-}
-
-.post-date {
-    font-size: 0.8em;
-    color: #888;
 }
 
 footer {
