@@ -31,6 +31,10 @@ main {
     padding: 20px;
 }
 
+#filters {
+    margin: 20px 0;
+}
+
 #rss-section {
     margin-top: 20px;
 }
@@ -38,6 +42,23 @@ main {
 #rss-feed article {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
+}
+
+/* Category-specific styles */
+.category-1 {
+    background-color: #f0f8ff; /* Light blue */
+}
+
+.category-2 {
+    background-color: #f5f5dc; /* Beige */
+}
+
+.category-3 {
+    background-color: #e6e6fa; /* Lavender */
+}
+
+.category-4 {
+    background-color: #ffe4e1; /* Light pink */
 }
 
 #rss-feed h3 {
@@ -53,10 +74,20 @@ main {
     text-decoration: underline;
 }
 
+.post-category {
+    font-size: 0.8em;
+    color: #888;
+    display: block;
+}
+
+.post-date {
+    font-size: 0.8em;
+    color: #888;
+}
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
-
