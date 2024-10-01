@@ -6,26 +6,15 @@ body {
 }
 
 header {
-    background: rgb(1, 50, 66); /* Updated to navy blue */
+    background-color: rgb(1, 50, 66); /* Navy blue */
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-size: 1.2em; /* Slightly increased font size */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 main {
@@ -43,6 +32,7 @@ main {
 
 #rss-feed h3 {
     margin: 0;
+    font-size: 1.2em;
 }
 
 #rss-feed a {
@@ -54,8 +44,12 @@ main {
     text-decoration: underline;
 }
 
+#rss-feed p {
+    margin: 5px 0;
+}
+
 footer {
-    background: #333;
+    background-color: rgb(1, 50, 66); /* Navy blue */
     color: #fff;
     text-align: center;
     padding: 10px;

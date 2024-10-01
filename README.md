@@ -1,1 +1,3 @@
- Proof of concept, unusalble and awful machine that shouldn't exist
+1 per i soldi
+2 per lo show
+4 perché sono discalculico

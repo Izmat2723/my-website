@@ -5,60 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSS Feed Aggregator</title>
-    <!--link del css-->>
+    <!-- Link to CSS for styling -->
     <link rel="stylesheet" href="styles.css">
     <!-- Include RSS Parser library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rss-parser/3.12.0/rss-parser.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Proof of concept</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#rss-section">Posts</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>RSS Feed Aggregator</h1>
     </header>
 
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>TestTestTestTestTestTest.</p>
+            <p>Test.</p>
         </section>
 
         <section id="about">
             <h2>About</h2>
-            <p>42.</p>
+            <p>TEST PAGE, DO NOT HACK PLEASE.</p>
         </section>
 
-        <!-- ZONA FILTRI -->
-        <section id="filters">
-            <h2>FILTRI</h2>
-            <label for="category-filter">Category:</label>
-            <select id="category-filter">
-                <option value="all">All</option>
-                <option value="category-1">Category 1</option>
-                <option value="category-2">Category 2</option>
-                <option value="category-3">Category 3</option>
-                <option value="category-4">Category 4</option>
-            </select>
-
-            <label for="date-filter">Date:</label>
-            <input type="date" id="date-filter">
-        </section>
-
-        <!-- Show and tell dell'RSS -->
+        <!-- RSS Feed Display Section -->
         <section id="rss-section">
             <h2>Latest Posts</h2>
-            <div id="rss-feed">Loading RSS feed...</div> <!-- Container -->
+            <div id="rss-feed">Loading RSS feed...</div> <!-- Container for RSS feed -->
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Contattateci a: <a href="mailto:mschneider@duck.com">mschneider@duck.com</a></p>
+            <p>Contact us at: <a href="mailto:mschneider@duck.com">mschneider@duck.com</a></p>
         </section>
     </main>
 
