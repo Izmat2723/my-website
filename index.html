@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSS Feed Aggregator</title>
-    <!-- Link to CSS for styling -->
+    <title>Test aggregatore RSS</title>
+    <!-- Link CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Include RSS Parser library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rss-parser/3.12.0/rss-parser.min.js"></script>
+    <!-- Libreria RSS -->
+    <script src="https://cdn.jsdelivr.net/npm/rss-parser@3.12.0/dist/rss-parser.min.js"></script>
+    <!-- Link a js -->
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>RSS Feed Aggregator</h1>
+        <h1>Don't panic</h1>
     </header>
 
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>Test.</p>
+            <p>Pagina di test per un aggregatore</p>
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>TEST PAGE, DO NOT HACK PLEASE.</p>
+        <!-- Opzioni filtro -->
+        <section id="filters">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="category-1">Turismo</option>
+                <option value="category-2">Servizi</option>
+                <option value="category-3">Eventi</option>
+                <option value="category-4">Tempo Libero</option>
+            </select>
         </section>
 
-        <!-- RSS Feed Display Section -->
+        <!-- Display RSS feed -->
         <section id="rss-section">
             <h2>Latest Posts</h2>
-            <div id="rss-feed">Loading RSS feed...</div> <!-- Container for RSS feed -->
+            <div id="rss-feed">Loading RSS feed...</div> <!-- Container per RSS feed -->
         </section>
 
         <section id="contact">
@@ -41,8 +50,5 @@
     <footer>
         <p>&copy; 2024</p>
     </footer>
-
-    <!-- Link to JavaScript file for fetching and displaying the RSS feed -->
-    <script src="scripts.js"></script>
 </body>
 </html>

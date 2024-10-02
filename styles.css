@@ -3,22 +3,23 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: rgb(1, 50, 66); /* Navy blue */
+    background: rgb(1, 50, 66);
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
     font-size: 2em;
 }
 
 main {
     padding: 20px;
+}
+
+#filters {
+    margin-bottom: 20px;
 }
 
 #rss-section {
@@ -30,9 +31,24 @@ main {
     padding: 10px 0;
 }
 
+#rss-feed .category-1 {
+    background-color: #ffcccb; /* Red per Turismo */
+}
+
+#rss-feed .category-2 {
+    background-color: #ccffcc; /* Green per Servizi */
+}
+
+#rss-feed .category-3 {
+    background-color: #ccccff; /* Blue per Eventi */
+}
+
+#rss-feed .category-4 {
+    background-color: #ffffcc; /* Yellow per Tempo Libero */
+}
+
 #rss-feed h3 {
     margin: 0;
-    font-size: 1.2em;
 }
 
 #rss-feed a {
@@ -44,12 +60,8 @@ main {
     text-decoration: underline;
 }
 
-#rss-feed p {
-    margin: 5px 0;
-}
-
 footer {
-    background-color: rgb(1, 50, 66); /* Navy blue */
+    background: rgb(1, 50, 66);
     color: #fff;
     text-align: center;
     padding: 10px;
