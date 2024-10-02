@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const RSS_URL = "https://associaneoncologicaaltofriuli.wordpress.com/feed";
+    const RSS_URL = "https://aoaf.info/feed";
     //const RSS_URL = "https://provamsch.wordpress.com/feed/"; // CORS proxy
     //const RSS_URL = "https://cors-anywhere.herokuapp.com/https://provamsch.wordpress.com/feed/"; // CORS proxy
     const parser = new RSSParser();
