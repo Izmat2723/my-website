@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const RSS_URL = "https://provamsch.wordpress.com/feed/"; // Feed da Wordpress automatico, su altri siti è da creare
+    const RSS_URL = "https://cors-anywhere.herokuapp.com/https://provamsch.wordpress.com/feed/"; // CORS proxy
     const parser = new RSSParser();
     const feedContainer = document.getElementById("rss-feed");
     const categoryFilter = document.getElementById("category-filter");
 
-    // Fetch 
+    // Fetch
     async function fetchRSS() {
         try {
             const feed = await parser.parseURL(RSS_URL);
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Display 
+    // Display
     function displayFeed(items) {
         let html = "";
 
@@ -33,16 +33,16 @@ document.addEventListener("DOMContentLoaded", function () {
         feedContainer.innerHTML = html || "<p>No posts available.</p>";
     }
 
-    // Categorie su titolo basate a tag
+    // Categorie 
     function categorizePost(title) {
         if (title.includes("#1")) return "category-1"; // Turismo
         if (title.includes("#2")) return "category-2"; // Servizi
         if (title.includes("#3")) return "category-3"; // Eventi
         if (title.includes("#4")) return "category-4"; // Tempo Libero
-        return "category-1"; // Ritorno a 1 automatico, da cambiare, togliere o aggiungere 1
+        return "category-1"; // Ritorno a 1 se non presente, da togliere o aggiungere quinto?
     }
 
-    // EventListener con filtro eventi
+    // Event Listener per categoria
     categoryFilter.addEventListener("change", function () {
         const selectedCategory = this.value;
         const articles = document.querySelectorAll("#rss-feed article");
@@ -56,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Display the RSS feed
+    // Call per RSS
     fetchRSS();
 });
