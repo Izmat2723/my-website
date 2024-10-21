@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Categorie 
     function categorizePost(title) {
         if (title.includes("#1")) return "category-1"; // Turismo
-        if (title.includes("#2")) return "category-2"; // Servizi
+        if (title.includes("#2")) return "category-2"; // Servizi?
         if (title.includes("#3")) return "category-3"; // Eventi
         if (title.includes("#4")) return "category-4"; // Tempo Libero
         return "category-1"; // Ritorno a 1 se non presente, da togliere o aggiungere quinto?
