@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const RSS_URL = "https://cors-anywhere.herokuapp.com/https://provamsch.wordpress.com/feed/"; // CORS proxy
+    const RSS_URL = "https://cors-anywhere.herokuapp.com/https://provamsch.wordpress.com/feed/"; // CORS proxy 
     const parser = new RSSParser();
     const feedContainer = document.getElementById("rss-feed");
     const categoryFilter = document.getElementById("category-filter");
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (title.includes("#2")) return "category-2"; // Servizi?
         if (title.includes("#3")) return "category-3"; // Eventi
         if (title.includes("#4")) return "category-4"; // Tempo Libero
-        return "category-1"; // Ritorno a 1 se non presente, da togliere o aggiungere quinto?
+        return "category-1"; // (categoria null?)
     }
 
     // Event Listener per categoria
